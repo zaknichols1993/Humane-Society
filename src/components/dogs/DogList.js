@@ -1,10 +1,14 @@
 import React from 'react';
 import DogSummary from './DogSummary';
 
-const DogList = () => {
+const DogList = ({dogs}) => {
     return (
         <div className="dog-list section">
-            <DogSummary />
+        { dogs && dogs.map(dog => {
+            return(
+                <DogSummary dog={dog} key={dog.id} />
+            )
+        })}
         </div>
     )
 }
