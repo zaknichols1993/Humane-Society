@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux';
+import { addDog } from '../../store/actions/dogActions';
 
 class AddDog extends Component {
   state = {
@@ -14,9 +16,7 @@ class AddDog extends Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(this.state);
-    this.props.createProject(this.state);
-    this.props.history.push('/');
+    this.props.addDog(this.state);
   }
   render() {
     return (
@@ -48,4 +48,10 @@ class AddDog extends Component {
   }
 }
 
-export default AddDog;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addDog: (dog) => dispatch(addDog(dog))
+  }
+}
+
+export default connect(null, mapDispatchToProps)(AddDog);

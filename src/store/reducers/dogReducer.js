@@ -7,6 +7,10 @@ const initState = {
 };
 
 const dogReducer = (state = initState, action) => {
+    switch (action.type) {
+        case 'ADD_DOG':
+        console.log('added dog', action.dog)
+    }
     return state
 }
 
