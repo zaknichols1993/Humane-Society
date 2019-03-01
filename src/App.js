@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import Dashboard from './components/dashboard/Dashboard';
 import DogDetails from './components/dogs/DogDetails';
 import SignIn from './components/auth/SignIn';
+import AddDog from './components/dogs/AddDog';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <Route exact path='/' component={Dashboard} />
           <Route path='/dog/:id' component={DogDetails} />
           <Route path='/signin' component={SignIn} />
+          <Route path='/add-dog' component={AddDog} />
         </Switch>
       </div>
       </BrowserRouter>
