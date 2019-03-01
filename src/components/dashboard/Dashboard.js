@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Notifications from './Notifications';
 import DogList from '../dogs/DogList';
+import CatList from '../cats/CatList';
 
 class Dashboard extends Component {
     render() {
@@ -11,7 +12,7 @@ class Dashboard extends Component {
             <DogList />
             </div>
             <div className="col s12 m3 offset-m1">
-            <DogList />
+            <CatList />
             </div>
             <div className="col s12 m3 offset-m1">
             <Notifications />

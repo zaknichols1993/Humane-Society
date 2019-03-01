@@ -7,7 +7,7 @@ const DogDetails = (props) => {
             <div className="card z-depth-0">
                 <div className="card-content">
                     <span className="card-title ">Dog Name {id}</span>
-                    <p>lorem asdiofjasdofijasdfkoj askdfj ldksadlf jwkg jwqoghqrhigqrg</p>
+                    <p>This is some info about a dog.</p>
                 </div>
                 <div className="card-action lighten-4 grey-text">
                     <p>Posted by Jill Richardson</p>
