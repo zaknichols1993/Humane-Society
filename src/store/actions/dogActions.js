@@ -1,5 +1,5 @@
 export const addDog = (dog) => {
-    return (dispatch, getState) => {
+    return (dispatch, getState, { getFirebase, getFirestore }) => {
         dispatch({ type: 'ADD_DOG', dog})
     }
 };
